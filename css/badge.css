@@ -1,0 +1,16 @@
+.badge {
+  width: 178px;
+  height: 32px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff;
+  background-color: #dd2a00;
+  justify-content: center;
+  column-gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+}

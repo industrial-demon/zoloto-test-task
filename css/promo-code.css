@@ -1,0 +1,38 @@
+.promo-code-field {
+  width: 330px;
+  height: 48px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: #DD2A00 2px solid;
+  padding: 0 8px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 21px;
+  position: relative;
+  overflow: hidden;
+}
+
+.promo-code-value {
+  margin-left: 12px;
+}
+
+.promo-code-copy {
+  all: unset;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  display: flex;
+  height: fit-content;
+}
+
+.promo-code-hint {
+  display: inline-block;
+  margin-top: 6px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #747474;
+}

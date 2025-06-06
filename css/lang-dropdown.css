@@ -1,0 +1,25 @@
+.lang-dropdown {
+  width: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.lang-dropdown-list {
+  list-style: none;
+  width: 145px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  border-radius: 4px;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  > li {
+    padding: 3px 10px;
+  }
+}

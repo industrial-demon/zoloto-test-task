@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zlato test task</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="css/style.css" rel="stylesheet">
+  </link>
+</head>
+
+<body>
+
+  <div class="discount-notification">
+    ⭐ Знижка -53% на пару обручок тут
+    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M15.7799 11.6572L16.4498 12.3281L10.0856 18.6924C9.30482 17.9114 9.3048 16.6452 10.0856 15.8643L13.6227 12.3272L10.1227 8.82813C9.34183 8.04708 9.34173 6.78099 10.1227 6.00001L15.7799 11.6572Z"
+        fill="white" />
+    </svg>
+  </div>
+
+  <header>
+    <dropdown-list>
+      <div slot="trigger" class="lang-dropdown">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="12" fill="url(#paint0_linear_120_3634)" />
+          <defs>
+            <linearGradient id="paint0_linear_120_3634" x1="12" y1="0" x2="12" y2="24" gradientUnits="userSpaceOnUse">
+              <stop offset="0.479167" stop-color="#0085FF" />
+              <stop offset="0.5" stop-color="#FFC700" />
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <span>Українська</span>
+
+        <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3.77148 5.37712L4.21875 5.82341L8.46191 1.58122L7.51855 0.637863L4.21777 3.93864L0.942383 0.663254L-4.23027e-08 1.60564L3.77148 5.37712Z"
+            fill="#747474" />
+        </svg>
+
+      </div>
+
+
+      <ul slot="content" class="lang-dropdown-list">
+        <li>
+          Aнглійська
+        </li>
+
+        <li>
+          Польська
+        </li>
+      </ul>
+
+    </dropdown-list>
+
+    <nav role="navigation" class="navigation">
+
+
+      <ul class="nav-list">
+        <li>Про нас</li>
+        <li>Доставка та оплата</li>
+        <li>Обмін</li>
+        <li>Точки видачі</li>
+        <li>Допомога (FAQ)</li>
+        <li>Контакти</li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <div class="header-controls">
+    <dropdown-list>
+      <div slot="trigger" class="product-catalog-trigger">
+        <span class="trigger-decoration">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8 18H4C1.79086 18 0 16.2091 0 14V10H8V18ZM18 10V14C18 16.2091 16.2091 18 14 18H10V10H18ZM1.90039 14C1.90039 15.1598 2.8402 16.0996 4 16.0996H6.09961V11.9004H1.90039V14ZM11.9004 16.0996H14C15.1598 16.0996 16.0996 15.1598 16.0996 14V11.9004H11.9004V16.0996ZM8 8H0V4C0 1.79086 1.79086 0 4 0H8V8ZM14 0C16.2091 0 18 1.79086 18 4C18 6.20914 16.2091 8 14 8C11.7909 8 10 6.20914 10 4C10 1.79086 11.7909 0 14 0ZM4 1.90039C2.8402 1.90039 1.90039 2.8402 1.90039 4V6.09961H6.09961V1.90039H4ZM14 1.90039C12.8402 1.90039 11.9004 2.8402 11.9004 4C11.9004 5.1598 12.8402 6.09961 14 6.09961C15.1598 6.09961 16.0996 5.1598 16.0996 4C16.0996 2.8402 15.1598 1.90039 14 1.90039Z"
+              fill="white" />
+          </svg>
+
+        </span>
+
+        Каталог товарів
+        <span class="status-indicator">
+          <svg class="arrow-down" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.6572 15.2797L12.3281 15.9496L18.6924 9.58535C17.9114 8.80471 16.6452 8.80469 15.8643 9.58535L12.3271 13.1225L8.82812 9.62246C8.0471 8.84172 6.78097 8.84162 6 9.62246L11.6572 15.2797Z"
+              fill="white" />
+          </svg>
+          <span>
+      </div>
+
+      <ul slot="content" class="product-catalog-list">
+        <li data-list-id="1">Product 1</li>
+        <li data-list-id="2">Product 2</li>
+        <li data-list-id="3">Product 3</li>
+        <li data-list-id="4">Product 4</li>
+        <li data-list-id="5">Product 5</li>
+        <li data-list-id="6">Product 6</li>
+        <li data-list-id="7">Product 7</li>
+        <li data-list-id="8">Product 8</li>
+      </ul>
+    </dropdown-list>
+
+  </div>
+
+  <main>
+
+    <div class="bread-crumbs">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M14 6.66699V12C14 13.4728 12.8058 14.667 11.333 14.667H4.66699C3.19423 14.667 2 13.4728 2 12V6.66699L8 1.66699L14 6.66699ZM3.2666 7.25977V12C3.2666 12.7732 3.89379 13.4004 4.66699 13.4004H5.33301V11.333C5.33318 9.8604 6.52735 8.66699 8 8.66699C9.47265 8.66699 10.6668 9.8604 10.667 11.333V13.4004H11.333C12.1062 13.4004 12.7334 12.7732 12.7334 12V7.25977L8 3.31543L3.2666 7.25977ZM8 10C7.26373 10 6.66717 10.5968 6.66699 11.333V13.333H9.33301V11.333C9.33283 10.5968 8.73627 10 8 10Z"
+          fill="#747474" />
+      </svg>
+
+      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M5.31726 4.10938L3.19519 6.23047C2.93532 5.97017 2.93521 5.54832 3.19519 5.28809L4.37487 4.1084L3.20788 2.94238C2.94777 2.68202 2.94763 2.26027 3.20788 2L5.31726 4.10938Z"
+          fill="black" />
+      </svg>
+
+      <span>Акції</span>
+
+      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M5.31726 4.10938L3.19519 6.23047C2.93532 5.97017 2.93521 5.54832 3.19519 5.28809L4.37487 4.1084L3.20788 2.94238C2.94777 2.68202 2.94763 2.26027 3.20788 2L5.31726 4.10938Z"
+          fill="black" />
+      </svg>
+
+      <span>Активуй -55% на прикраси з діамантами 💎</span>
+    </div>
+
+    <section class="content">
+      <h1>Красуй це літо. зі Zlato.ua: спекотні акції вже тут ☀️</h1>
+
+      <div class="badge-container">
+
+        <span class="badge">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM13 12C13 12.6 12.6 13 12 13C11.8 13 11.7 13 11.5 12.9L8.9 11.4C8.4 11.1 8.3 10.5 8.5 10C8.8 9.5 9.4 9.4 9.9 9.6L11 10.2V7C11 6.4 11.4 6 12 6C12.6 6 13 6.4 13 7V12Z"
+              fill="white" />
+          </svg>
+          <span>діє до 24.12.2023</span>
+        </span>
+      </div>
+
+      <div class="main-banner">
+        <img src="img/main-banner.png" alt="main banner">
+      </div>
+
+
+      <!-- Promo Actions -->
+      <div class="promo-actions-container" id="promoActions">
+        <tabs-component>
+          <tab-item label="Про акцію">
+            <div class="action-tab about-action">
+
+              <span class="badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2ZM13 12C13 12.6 12.6 13 12 13C11.8 13 11.7 13 11.5 12.9L8.9 11.4C8.4 11.1 8.3 10.5 8.5 10C8.8 9.5 9.4 9.4 9.9 9.6L11 10.2V7C11 6.4 11.4 6 12 6C12.6 6 13 6.4 13 7V12Z"
+                    fill="white" />
+                </svg>
+                <span>діє до 24.12.2023</span>
+              </span>
+
+
+              <div class="action-notification">
+                <article class="action-text">
+                  Красуй це літо з нами: спекотні акції вже тут ☀️ З 20 червня по 31 липня 2023 активуй знижку -55% при
+                  покупці прикрас з діамантами за цим промокодом ↓
+                </article>
+
+
+                <div class="promo-code-container">
+
+                  <div class="promo-code-field">
+                    <span class="promo-code-value" id="promoValue"></span>
+                    <input hidden id="promoCode">
+                    <button class="promo-code-copy" id="promoCopyBtn">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M16.5 1H4.5C3.4 1 2.5 1.9 2.5 3V17H4.5V3H16.5V1ZM19.5 5H8.5C7.4 5 6.5 5.9 6.5 7V21C6.5 22.1 7.4 23 8.5 23H19.5C20.6 23 21.5 22.1 21.5 21V7C21.5 5.9 20.6 5 19.5 5ZM19.5 21H8.5V7H19.5V21Z"
+                          fill="#747474" />
+                      </svg>
+
+                    </button>
+
+                  </div>
+                  <span class="promo-code-hint"> Скопіюй промокод </span>
+                </div>
+              </div>
+
+            </div>
+          </tab-item>
+
+          <tab-item label="Офіційні правила">
+            <div class="action-tab rules-action">
+              <article class="action-text">
+                Правила акції<br>
+                Акція діє з 20.06 по 31.07.2023;
+                в акції беруть участь ювелірні вироби зі вставкою «Діамант», з основною знижкою від -49%;
+              </article>
+            </div>
+          </tab-item>
+        </tabs-component>
+      </div>
+
+      <div class="action-config">
+
+        <div class="button-group">
+          <button class="button-rule button-rule-active">Правила</button>
+          <button class="button-rule">Обмеження</button>
+          <button class="button-rule">Як активувати промокод</button>
+          <button class="button-rule">Приклад розрахунку знижки</button>
+        </div>
+
+        <section class="action-rules">
+          <h3>Правила акції</h3>
+
+          <div>
+
+            <ul class="rules-list">
+              <li>
+                <span class="rule-marker">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.99999 8C4.86363 6.13636 6.18182 4.81818 8 4V3.95455C6.22727 3.13637 4.90908 1.81818 3.99999 0H3.95454C3.0909 1.81818 1.77273 3.18182 0 3.95455V4C1.72727 4.81818 3.04545 6.18182 3.99999 8Z"
+                      fill="#DD2A00" />
+                  </svg>
+                </span>
+
+
+                Акція діє з 20.06 по 31.07.2023;
+              </li>
+              <li>
+                <span class="rule-marker">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.99999 8C4.86363 6.13636 6.18182 4.81818 8 4V3.95455C6.22727 3.13637 4.90908 1.81818 3.99999 0H3.95454C3.0909 1.81818 1.77273 3.18182 0 3.95455V4C1.72727 4.81818 3.04545 6.18182 3.99999 8Z"
+                      fill="#DD2A00" />
+                  </svg>
+                </span>
+                <span>в акції беруть участь <b> ювелірні вироби зі вставкою «Діамант»,</b> з основною знижкою від
+                  -49%;</span>
+              </li>
+              <li>
+                <span class="rule-marker">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.99999 8C4.86363 6.13636 6.18182 4.81818 8 4V3.95455C6.22727 3.13637 4.90908 1.81818 3.99999 0H3.95454C3.0909 1.81818 1.77273 3.18182 0 3.95455V4C1.72727 4.81818 3.04545 6.18182 3.99999 8Z"
+                      fill="#DD2A00" />
+                  </svg>
+                </span>
+                <span><b>під терміном «активуй -55% на прикраси з діамантами»</b> мається на увазі заміна Основної
+                  знижки акційного
+                  товару на Акційну знижку -55% при застосуванні промокоду «ДІАМАНТКОД55»;</span>
+              </li>
+              <li>
+                <span class="rule-marker">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.99999 8C4.86363 6.13636 6.18182 4.81818 8 4V3.95455C6.22727 3.13637 4.90908 1.81818 3.99999 0H3.95454C3.0909 1.81818 1.77273 3.18182 0 3.95455V4C1.72727 4.81818 3.04545 6.18182 3.99999 8Z"
+                      fill="#DD2A00" />
+                  </svg>
+                </span>
+
+                <span>для коректної роботи промокоду рекомендуємо додавати в кошик лише ті акційні вироби, що
+                  відповідають умовам цієї акції.</span>
+              </li>
+            </ul>
+
+          </div>
+
+
+        </section>
+
+        <section class="action-rules">
+          <h3>Обмеження</h3>
+          <div>
+
+            <ul class="rules-list">
+              <li>
+                <span class="rule-marker">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.99999 8C4.86363 6.13636 6.18182 4.81818 8 4V3.95455C6.22727 3.13637 4.90908 1.81818 3.99999 0H3.95454C3.0909 1.81818 1.77273 3.18182 0 3.95455V4C1.72727 4.81818 3.04545 6.18182 3.99999 8Z"
+                      fill="#DD2A00" />
+                  </svg>
+                </span>
+
+
+                <span>В акції не беруть участь весільні обручки з діамантами та вироби з діамантами з основною знижкою
+                  понад 54%;</span>
+              </li>
+              <li>
+                <span class="rule-marker">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.99999 8C4.86363 6.13636 6.18182 4.81818 8 4V3.95455C6.22727 3.13637 4.90908 1.81818 3.99999 0H3.95454C3.0909 1.81818 1.77273 3.18182 0 3.95455V4C1.72727 4.81818 3.04545 6.18182 3.99999 8Z"
+                      fill="#DD2A00" />
+                  </svg>
+                </span>
+                <span>акція не сумісна з іншими акційними пропозиціями та додатковими знижками (3% на першу покупку, 5%
+                  іменинникам, 200 грн за підписку).</span>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section class="promo-code-activations">
+
+          <div>
+            
+            <h3>Як активувати промокод</h3>
+          
+          </div>
+
+          <div class="banner-container">
+              
+            <img src="img/promo-code-activations.png" width="100%" alt="Promo code activations">
+
+          </div>
+          
+
+        </section>
+
+        <section class="action-rules">
+          <h3>Правила акції</h3>
+
+        </section>
+      </div>
+
+    </section>
+
+
+
+    <!-- <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div> -->
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+
+  <script src="js/script.js" type="module"></script>
+  <script src="js/dropdown.js" type="module"></script>
+  <script src="js/tabs-component.js" type="module"></script>
+  <script src="js/swiper.js" type="module"></script>
+</body>
+
+</html>
