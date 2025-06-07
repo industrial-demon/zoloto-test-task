@@ -589,6 +589,7 @@ footer {
 }
 
 .payments-container {
+  min-height: 48px;
   height: 48px;
   overflow: hidden;
   color: #ffffff;
