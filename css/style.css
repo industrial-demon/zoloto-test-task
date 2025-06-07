@@ -23,7 +23,6 @@ body {
 }
 
 header {
-  position: relative;
   padding: 0 100px;
 }
 
@@ -41,7 +40,7 @@ header {
   align-items: center;
   flex: 1;
   justify-content: space-between;
-
+  background-color: #FFFFFF;
   .menu-header {
     display: flex;
     column-gap: 20px;
@@ -680,7 +679,12 @@ footer {
 
 @media screen and (width < 1024px) {
 
-
+  header {
+    position: sticky;
+    padding: 0 16px;
+    z-index: 9;
+    top: 40px;
+  }
 
   .promo-code-activations {
     flex-direction: column;
