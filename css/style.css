@@ -3,6 +3,7 @@
 @import url("badge.css");
 @import url("promo-code.css");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
   font-family: "Helvetica Neue Cyr";
@@ -23,10 +24,28 @@ body {
 
 header {
   position: relative;
+  padding: 0 100px;
+}
+
+.desktop-header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
+}
+
+.mobile-header {
+  display: none;
+  height: 56px;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+
+  .menu-header {
+    display: flex;
+    column-gap: 20px;
+  }
 }
 
 .discount-notification {
@@ -51,12 +70,116 @@ header {
   height: 64px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 100px;
+  justify-content: space-between;
   z-index: 10;
 }
 
-details.product-catalog {
-  position: relative;
+.phone-container {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 10px;
+  margin-left: 10px;
+
+  .phone {
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+
+    >span:nth-of-type(1) {
+      font-family: "Montserrat";
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      white-space: nowrap;
+    }
+
+    >span:nth-of-type(2) {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      white-space: nowrap;
+    }
+  }
+
+  .arrow-container {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.search-container {
+  width: 100%;
+  margin: 0 20px;
+
+  .search {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .search-input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 40px 0 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .search-icon {
+    position: absolute;
+    display: flex;
+    height: fit-content;
+    width: 24px;
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 12px;
+    transform: translate(0, 50%);
+  }
+}
+
+.user-controls {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.devider {
+  width: 1px;
+  height: 24px;
+  background-color: #dd5c3f;
+  margin: 0 30px 0 10px;
+}
+
+.login {
+  min-width: 104px;
+  width: 104px;
+  height: 40px;
+  justify-content: center;
+  column-gap: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .login-title {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 .product-catalog-list>li {
@@ -75,7 +198,10 @@ details.product-catalog {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .nav-list {
@@ -86,6 +212,7 @@ details.product-catalog {
   >li {
     padding: 8px;
     cursor: pointer;
+    white-space: nowrap;
   }
 }
 
@@ -130,6 +257,9 @@ details.product-catalog {
 
 .action-config {
   margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
 
 .button-group {
@@ -178,16 +308,111 @@ details.product-catalog {
   padding: 0 10px;
 }
 
+.promo-code-steps {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
 
 .promo-code-activations {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .banner-container {
-    max-width: 702px;
+  column-gap: 56px;
+
+  .banner-container-step-1-2 {
     max-height: 500px;
     overflow: hidden;
     border-radius: 24px;
+  }
+
+  .banner-container-step-3-4 {
+    max-width: 800px;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+
+  .promo-code-activated-part-1,
+  .promo-code-activated-part-2 {
+    max-width: 740px;
+  }
+}
+
+
+.productsSwiper {
+  width: 100%;
+  height: 100%;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-pagination {
+    position: relative;
+    top: 4px;
+  }
+}
+
+.product-slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+
+  >img {
+    object-fit: cover;
+  }
+}
+
+.product-control {
+  position: absolute;
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+
+  .product-title {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .product-btn {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 48px;
+    border-radius: 16px;
+    background-color: #DD2A00;
+  }
+}
+
+.product-list {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.discount-banner-container {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+
+  >img {
+    width: 100%;
   }
 }
 
@@ -196,6 +421,7 @@ h3 {
   font-weight: 600;
   font-size: 28px;
   line-height: 32px;
+  white-space: nowrap;
 }
 
 h1 {
@@ -220,5 +446,267 @@ h1 {
 }
 
 footer {
+  margin-top: 24px;
   height: 424px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-content {
+  display: flex;
+  padding: 24px;
+  margin: 0 130px;
+  column-gap: 32px;
+}
+
+.right-container {
+  .social-container {
+    width: 344px;
+  }
+
+  .about {
+    font-family: "Roboto Flex";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #747474;
+  }
+
+  .social {
+    display: flex;
+    margin-top: 24px;
+    align-items: center;
+    column-gap: 10px;
+
+    >span {
+      font-family: "Roboto Flex";
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+}
+
+.left-container {
+
+  .contacts {
+    width: 188px;
+    background-color: #dfddddf9;
+    border-radius: 16px;
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .contact-devider {
+    width: 100%;
+    height: 1px;
+    background-color: #00000014;
+    margin: 16px 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+
+    .contact-phone {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+
+      .phone {
+        display: flex;
+        flex-direction: column;
+
+        >span:nth-of-type(1) {
+          font-family: "Montserrat";
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        >span:nth-of-type(2) {
+          font-family: "Roboto Flex";
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #747474;
+        }
+      }
+    }
+
+    .contact-email {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      ;
+    }
+  }
+
+  .call-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+
+    >span {
+      font-family: "Roboto Flex";
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #747474;
+      text-align: center;
+    }
+
+    .schedule {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 6px;
+    }
+  }
+}
+
+.services {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  .column-1, .column-3 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+}
+
+.payments-container {
+  height: 48px;
+  overflow: hidden;
+  color: #ffffff;
+  background: linear-gradient(90deg, rgba(237, 221, 83, 1) 0%, rgba(221, 42, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 9%, rgba(221, 42, 0, 1) 100%);
+
+  .content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .payments {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    >span {
+      font-family: "Roboto Flex";
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  .payments-list {
+    display: flex;
+    column-gap: 16px;
+  }
+}
+
+
+
+@media screen and (width < 1300px) {
+  .footer-content {
+    margin: 0 40px;
+  }
+}
+
+@media screen and (width < 1200px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .header-controls {
+    display: none;
+  }
+
+  .mobile-header {
+    display: flex;
+  }
+
+  .content {
+    padding: 0 16px;
+  }
+
+  .action-tab {
+    padding: 16px;
+
+    .action-notification {
+      margin-top: 16px;
+      row-gap: 16px;
+      flex-direction: column;
+    }
+  }
+
+  .action-config {
+    .button-group {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+
+  .product-list {
+    row-gap: 16px;
+  }
+
+  footer {
+    height: fit-content;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+
+@media screen and (width < 1024px) {
+
+
+
+  .promo-code-activations {
+    flex-direction: column;
+    .banner-container-step-3-4, .banner-container-step-3-4 {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .product-slide {
+    width: 213px;
+    height: 213px;
+  }
+  .product-btn {
+    width: 56px;
+    height: 46px;
+  }
+
+  .footer-content {
+    margin: 0;
+
+    .left-container {
+      display: none;
+    }
+
+    .right-container {
+      display: none;
+    }
+  }
 }
